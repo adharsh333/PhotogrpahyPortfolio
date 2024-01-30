@@ -17,6 +17,7 @@
 }
 
 body {
+  overflow: hidden;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -33,6 +34,9 @@ body {
 }
 .embla {
   overflow: hidden;
+  z-index: -10;
+  position: absolute;
+  top: 0%;
 }
 .embla__container {
   display: flex;
@@ -44,5 +48,38 @@ body {
 .embla__slide img{
   width: 100% ;
 }
+.social-ico-block {
+  width: 20px;
+  top: 50vh;
+  transform: translate(0,-50%);
+  right: 40px;
+  position: fixed;
+  z-index: 25
+}
 
+.social-ico {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  float: left;
+  margin: 10px 0
+}
+
+.social-ico svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 20px;
+  opacity: 1
+}
+
+.social-ico svg path {
+  fill: #fff
+}
+
+.social-ico:hover svg {
+  opacity: .5;
+  cursor: pointer
+}
 

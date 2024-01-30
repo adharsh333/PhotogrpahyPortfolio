@@ -1,8 +1,10 @@
 "use client";
+import Image from 'next/image';
 import React, { useState } from "react";
 import Link from 'next/link';
 import NavLink from "./NavLink"
 import { Bars4Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import Logo from '../components/Logo';
 
 
 
@@ -10,29 +12,32 @@ const navlinks =[
     
     {
         title:"Home",
-        path:"#home",
+        path:"../",
     },
     {
         title:"Services",
-        path:"#services",
+        path:"../services",
+    },
+    {
+        title:"Gallery",
+        path:"../gallery",
     },
     {
         title:"About",
-        path:"#about",
-
+        path:"../about/",
     },
     {
         title:"Contact",
-        path:"#contact",
+        path:"../contact",
     }
 ]
 
 const Navbar = () => {
     const[navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav>
+    <div>
         <div className="flex flex-wrap items-center justify-between mx-auto p-8">
-            <Link href={"/"} className= "text-xl md:text-5xl text-white font-semibold">Lama</Link>
+            <Link href={"/"} className= "object-fill"><Logo/></Link>
 
             <div className="mobile-menu block md:hidden  ">
                 {!navbarOpen ? (
@@ -52,19 +57,24 @@ const Navbar = () => {
                 )
                 }
             </div>
+  
             <div className="menu hidden md:block md:w-auto" id="navbar">
-                <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8">
-                    { navlinks.map((link,index) =>(
+            <div className=''>
+                <ul className="flex p-4 md:px-16 md:py-5 md:flex-row md:space-x-8">
+        
+                    {navlinks.map((link,index) =>(
                         <li key={index}>
                             <NavLink href={link.path} title= {link.title}></NavLink>
                         
                         </li>
                     ))}
+
                 </ul>
+           </div>
             </div>
 
         </div>
-    </nav>
+    </div>
   );
 };
 

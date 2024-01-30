@@ -1,16 +1,15 @@
+import React from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import Socialbar from './components/Socialbar';
+import Socialmedia from './components/Socialmedia';
 import {EmblaCarousel} from './components/EmblaCarousel'
 
 const Home = () => {
   return (
-    <div>
-      <Navbar />
+    <section>
       <HeroSection />
       <EmblaCarousel />
-      <Socialbar />
-    </div>
+    </section>
   );
 };
 
