@@ -2,6 +2,7 @@
 import Navbar from '@/app/components/Navbar';
 import React from 'react'
 import Image1 from '../images/slide-9.jpg';
+import image2 from '../images/slide-11.jpg';
 import Image from 'next/image';
 
 const Contact = () => {
@@ -10,6 +11,11 @@ const Contact = () => {
 
 <section>
             <div>
+            <div className='about'>
+            <div className="about_container">
+                     <Image alt="picture" src={image2} width={2000} height={1400}/>
+                </div>
+           </div>
                 <div className="col-span-5 px-48 py-32">    
                     <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400  to-gray-300">    Contact Me
