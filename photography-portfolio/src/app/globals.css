@@ -32,6 +32,22 @@ body {
     text-wrap: balance;
   }
 }
+
+.about {
+  overflow: hidden;
+  z-index: -10;
+  position: absolute;
+  top: 0%;
+  background-size: contain;
+  max-width:100%;
+  max-height:50%;
+  
+}
+.about__container {
+  display: flex;
+  padding-bottom: 1px;
+  
+}
 .embla {
   overflow: hidden;
   z-index: -10;

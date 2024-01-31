@@ -6,12 +6,19 @@ import image1 from '../images/slide-6.jpg';
 import image2 from '../images/slide-7.jpg';
 import image3 from '../images/MainLogo.png';
 import image4 from '../images/slide-10.jpg';
+import image5 from '../images/slide-11.jpg';
 import Image from '../../../node_modules/next/image';
 
 const About = () => {
     return(
-        
-        <div className="px-48 py-32 z-10"> 
+        <div>
+        <div className='about'>
+            <div className="about_container">
+                     <Image alt="picture" src={image5} width={2200} height={1468}/>
+                </div>
+           </div>
+        <div className="px-48 py-32 z-10">
+                     
         <div className='grid grid-cols-2'>
             <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400  to-gray-300">    About
@@ -54,8 +61,8 @@ const About = () => {
                     <Image alt="picture" src={image1} width={600} height={350} layout="responsive" loading='lazy'/>
                     <Image alt="picture" src={image4} width={600} height={350} layout="responsive"/>
                   </div>
-        </div>
-                                       
+        </div>   
+        </div>   
     )
 }
 

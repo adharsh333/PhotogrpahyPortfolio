@@ -5,7 +5,6 @@ import { TypeAnimation } from 'react-type-animation';
 const HeroSection = () => {
     return(
         <section>
-            
             <div className="grid grid-cols-1 lg:grid-cols-12">
                 <div className="col-span-5 px-48 py-32">    
                     <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
