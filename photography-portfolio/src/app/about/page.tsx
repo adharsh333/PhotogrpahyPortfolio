@@ -12,9 +12,9 @@ import Image from '../../../node_modules/next/image';
 const About = () => {
     return(
         <div>
-        <div className='about'>
-            <div className="about_container">
-                     <Image alt="picture" src={image5} width={2000} height={1400}/>
+        <div className="section-border">
+                     <div className="section-background">  
+                     <Image alt="picture" src={image5} fill/>
                 </div>
            </div>
         <div className="px-48 py-32 z-10">
@@ -57,9 +57,9 @@ const About = () => {
                </div>
             </div>
             <div className="imagecontainer">
-                    <Image alt="picture" src={image2} width={600} height={350} layout="responsive"/>
-                    <Image alt="picture" src={image1} width={600} height={350} layout="responsive" loading='lazy'/>
-                    <Image alt="picture" src={image4} width={600} height={350} layout="responsive"/>
+                    <Image alt="picture" src={image2} width={600} height={350} layout="responsive" placeholder="blur"/>
+                    <Image alt="picture" src={image1} width={600} height={350} layout="responsive" placeholder="blur" loading='lazy'/>
+                    <Image alt="picture" src={image4} width={600} height={350} layout="responsive" placeholder="blur" />
                   </div>
         </div>   
         </div>   

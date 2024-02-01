@@ -38,7 +38,7 @@ body {
   z-index: -10;
   position: absolute;
   top: 0%;
-  background-size: contain;
+  background-size:contain;
   max-width:100%;
   max-height:50%;
   
@@ -47,6 +47,29 @@ body {
   display: flex;
   padding-bottom: 1px;
   
+}
+
+.page-section .section-border {
+  background-color: var(--siteBackgroundColor);
+}
+.section-border {
+  position: absolute;
+  overflow:hidden;
+  background-size: 100% 100%;
+  max-width: 100%;
+  height: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -10;
+}
+.section-background{
+  display:block;
+  
+  height:500px;
+}
+.section-background-overlay{
+ opacity: 0.2;
 }
 .embla {
   overflow: hidden;
