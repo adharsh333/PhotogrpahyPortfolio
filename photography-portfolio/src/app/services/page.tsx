@@ -34,41 +34,31 @@ const Services = () => {
 
 
     <div className="px-48 py-32 z-10">
-                <div className='grid grid-rows-3 gap-8 '>
-                <div className="backdrop-blur-3xl lg:bg-white/30 px-8 py-6 rounded-3xl hover:blur-lg">
+                <div className='grid grid-rows-3'>
+                <Card>
       <Image
         alt="Woman listing to music"
-        className="object-cover rounded-xl float-center"
-        height={1000}
-        src={image2}
-        width={1000}
+        className="serviceimage object-cover float-center hover:blur-lg" src={image2}
       />
-      <h4 className="font-bold text-transparent absolute text-9xl bg-clip-text bg-gradient-to-r from-gray-200  to-gray-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">PHOTOGRPAHY</h4>    
-</div>
-<div className="backdrop-blur-3xl bg-white/30 px-8 py-6 rounded-3xl hover:blur-lg">
-      <div>
+      <h4 className="font-bold text-transparent absolute text-9xl bg-clip-text bg-gradient-to-r from-gray-200  to-gray-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">PHOTOGRAPHY</h4>    
+</Card>
+
+<Card>
       <Image
         alt="Woman listing to music"
-        className="object-cover rounded-xl float-right"
-        height={500}
-        src={image2}
-        width={1000}
+        className="serviceimage object-cover float-center hover:blur-lg" src={image2}
       />
-    <h4 className="font-bold text-transparent absolute text-9xl bg-clip-text bg-gradient-to-r from-gray-200  to-gray-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">VIDEOGRAPHY</h4>
-      </div>
-</div>
-<div className="backdrop-blur-3xl bg-white/60 px-8 py-6 rounded-3xl hover:blur-lg">
-      <div>
+      <h4 className="font-bold text-transparent absolute text-9xl bg-clip-text bg-gradient-to-r from-gray-200  to-gray-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">VIDEOGRAPHY</h4>    
+</Card>
+
+<Card>
       <Image
         alt="Woman listing to music"
-        className="object-cover rounded-xl float-left"
-        height={1000}
-        src={image2}
-        width={1000}
+        className="serviceimage object-cover float-center hover:blur-lg" src={image2}
       />
-     <h4 className="font-bold text-transparent absolute text-9xl bg-clip-text bg-gradient-to-r from-gray-200  to-gray-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">EDITING</h4>
-        </div>
-</div>
+      <h4 className="font-bold text-transparent absolute text-9xl bg-clip-text bg-gradient-to-r from-gray-200  to-gray-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">EDITING</h4>    
+</Card>
+
     </div>
     </div>
              

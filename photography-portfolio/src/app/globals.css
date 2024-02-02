@@ -202,3 +202,8 @@ body {
 textarea {
   resize:none;
 }
+
+.serviceimage{
+  width: 100%;
+  height: 50%;
+}
