@@ -1,7 +1,7 @@
 "use client"
 import Navbar from '@/app/components/Navbar';
 import React from 'react'
-import Image1 from '../images/slide-9.jpg';
+import Image1 from '../images/slide-6.jpg';
 import image2 from '../images/slide-11.jpg';
 import Image from 'next/image';
 
@@ -23,11 +23,11 @@ const Contact = () => {
                     </h1>
          
             <div className='grid grid-cols-2 grid-rows-1'>
-            <div className='col-auto py-16'>
-            <Image alt="picture" src={Image1} width={600} height={350} layout="responsive" loading='lazy'/>
-            </div>
-            <form className="container col-auto">
-                <h1>Get In Touch !!!</h1>
+       <div>
+       <Image className="rounded-3xl"alt="picture" src={Image1} width={600}/>
+       </div>
+            <div className="container cols-auto backdrop-blur-3xl lg:bg-white/10 rounded-3xl">
+            <form>
       <div className="email block">
         <label htmlFor="frm-email">Email</label>
         <input
@@ -48,28 +48,6 @@ const Contact = () => {
           required
         />
       </div>
-      <div className="name block">
-        <div>
-          <label htmlFor="frm-first">First Name</label>
-          <input
-            id="frm-first"
-            type="text"
-            name="first"
-            autoComplete="given-name"
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="frm-last">Last Name</label>
-          <input
-            id="frm-last"
-            type="text"
-            name="last"
-            autoComplete="family-name"
-            required
-          />
-        </div>
-      </div>
       <div className="message block">
         <label htmlFor="frm-message">Message</label>
         <textarea id="frm-message" rows="3" name="message"></textarea>
@@ -78,6 +56,7 @@ const Contact = () => {
         <button type="submit">Submit</button>
       </div>
     </form>
+    </div>
             </div>
             </div>
             </div>

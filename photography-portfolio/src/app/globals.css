@@ -153,14 +153,14 @@ body {
  
   margin: auto;
   margin-top: 20px;
-  width: 80%;
-  height:100%;
-  padding: 50px;
+  width: auto;
+  height:auto;
+  padding: 5%;
 
 }
 
 .container input {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin: 10px 0 10px 0px;
   border-color: rgb(31, 28, 28);
   padding: 10px;
@@ -187,12 +187,10 @@ body {
   flex-direction: column;
 }
 
-.block button {
-  padding-top: 10px;
-  margin-bottom: 0%;
+.block button{
   font-size: 20px;
-  width: 30%;
-  border: 3px solid black;
+  width: 50%;
+  border: 3px solid whitesmoke;
   border-radius: 5px;
 }
 

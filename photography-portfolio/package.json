@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
+    "@nextui-org/react": "^2.2.9",
     "embla-carousel-react": "^8.0.0-rc21",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
     "react-photo-album": "^2.3.1",
     "react-social-icons": "^6.10.0",
     "react-type-animation": "^3.2.0"
