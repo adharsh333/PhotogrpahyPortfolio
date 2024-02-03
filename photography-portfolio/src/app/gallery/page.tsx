@@ -1,7 +1,7 @@
 import image1 from '../images/slide-9.jpg';
 import Image from '../../../node_modules/next/image';
 import PhotoGallery from '../components/PhotoGallery';
-import image6 from '../images/panaroma-6.jpg';
+import image6 from '../images/panaroma-1.jpg';
 
 
 const Gallery = () => {
