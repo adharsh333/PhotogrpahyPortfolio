@@ -7,16 +7,18 @@ import image2 from '../images/slide-7.jpg';
 import image3 from '../images/MainLogo.png';
 import image4 from '../images/slide-10.jpg';
 import image5 from '../images/slide-11.jpg';
+import image6 from '../images/panaroma-4.jpg';
 import Image from '../../../node_modules/next/image';
 
 const About = () => {
     return(
         <div>
-        <div className="section-border">
-                     <div className="section-background">  
-                     <Image alt="picture" src={image5} fill/>
-                </div>
-           </div>
+         <div className='about'>
+            <div className="about_container w-full">
+                     <Image alt="picture" src={image6} />
+                    
+            </div>
+            </div>
         <div className="px-48 py-32 z-10">
                      
         <div className='grid grid-cols-2'>
@@ -42,8 +44,6 @@ const About = () => {
                 </div>
                 </div>
             <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-1">
-            
-                   
                 <div className='col-span-2'>
                 Welcome to Llama's world of timeless wedding photography! I am thrilled to be part of your journey, capturing the most precious moments on one of the most significant days of your life.   
                     

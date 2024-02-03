@@ -17,7 +17,6 @@
 }
 
 body {
- 
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -49,28 +48,6 @@ body {
   
 }
 
-.page-section .section-border {
-  background-color: var(--siteBackgroundColor);
-}
-.section-border {
-  position: absolute;
-  overflow:hidden;
-  background-size: 100% 100%;
-  max-width: 100%;
-  height: auto;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: -10;
-}
-.section-background{
-  display:block;
-  
-  height:500px;
-}
-.section-background-overlay{
- opacity: 0.2;
-}
 .embla {
   overflow: hidden;
   z-index: -10;
@@ -85,7 +62,8 @@ body {
   min-width: 0;
 }
 .embla__slide img{
-  width: 100% ;
+  height: 100% ;
+  background-size: cover;
 }
 .social-ico-block {
   width: 20px;
@@ -137,73 +115,13 @@ body {
 
 
 
-.block {
-  display: flex;
-  flex-direction: column;
-}
-
-.name {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.container {
-  font-size: 1.3rem;
- 
-  margin: auto;
-  margin-top: 20px;
-  width: auto;
-  height:auto;
-  padding: 5%;
-
-}
-
-.container input {
-  font-size: 1.0rem;
-  margin: 10px 0 10px 0px;
-  border-color: rgb(31, 28, 28);
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #e8f0fe;
-}
-
-.container textarea {
-  margin: 10px 0 10px 0px;
-  padding: 5px;
-  border-color: rgb(31, 28, 28);
-  border-radius: 5px;
-  background-color: #e8f0fe;
-  font-size: 20px;
-}
-
-.container h1 {
-  text-align: center;
-  font-weight: 600;
-}
-
-.name div {
-  display: flex;
-  flex-direction: column;
-}
-
-.block button{
-  font-size: 20px;
-  width: 50%;
-  border: 3px solid whitesmoke;
-  border-radius: 5px;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-}
-
-textarea {
-  resize:none;
-}
 
 .serviceimage{
   width: 100%;
   height: 50%;
+  flex-basis: 100%;
+}
+.card{
+  height: 42rem;
+  width: 100%;
 }

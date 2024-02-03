@@ -4,6 +4,7 @@ import React from 'react'
 import Image1 from '../images/slide-6.jpg';
 import image2 from '../images/slide-11.jpg';
 import Image from 'next/image';
+import image6 from '../images/panaroma-4.jpg';
 
 const Contact = () => {
 
@@ -13,7 +14,7 @@ const Contact = () => {
             <div>
             <div className='about'>
             <div className="about_container">
-                     <Image alt="picture" src={image2} width={2000} height={1400}/>
+                     <Image alt="picture" src={image6} />
                 </div>
            </div>
                 <div className="col-span-5 px-48 py-32">    
@@ -24,38 +25,10 @@ const Contact = () => {
          
             <div className='grid grid-cols-2 grid-rows-1'>
        <div>
-       <Image className="rounded-3xl"alt="picture" src={Image1} width={600}/>
+       <Image className=""alt="picture" src={Image1} width={600}/>
        </div>
-            <div className="container cols-auto backdrop-blur-3xl lg:bg-white/10 rounded-3xl">
-            <form>
-      <div className="email block">
-        <label htmlFor="frm-email">Email</label>
-        <input
-          id="frm-email"
-          type="email"
-          name="email"
-          autoComplete="email"
-          required
-        />
-      </div>
-      <div className="block phone">
-        <label htmlFor="frm-phone">Phone</label>
-        <input
-          id="frm-phone"
-          type="text"
-          name="phone"
-          autoComplete="tel"
-          required
-        />
-      </div>
-      <div className="message block">
-        <label htmlFor="frm-message">Message</label>
-        <textarea id="frm-message" rows="3" name="message"></textarea>
-      </div>
-      <div className="button block">
-        <button type="submit">Submit</button>
-      </div>
-    </form>
+            <div className="container cols-auto backdrop-blur-3xl lg:bg-white/10">
+           
     </div>
             </div>
             </div>
