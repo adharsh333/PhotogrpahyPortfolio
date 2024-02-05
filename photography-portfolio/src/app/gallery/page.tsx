@@ -16,7 +16,7 @@ const Gallery = () => {
                     
             </div>
             </div>
-            <div className="px-48 z-10">
+            <div className="z-10">
             <PhotoGallery/>
 </div>
 
