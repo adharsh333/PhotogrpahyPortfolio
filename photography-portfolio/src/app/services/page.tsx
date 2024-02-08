@@ -12,7 +12,7 @@ import image6 from '../images/panaroma-5.jpg';
 const Services = () => {
     return(
         <div>
-        <div className='about z-20'>
+        <div className='about'>
             <div className="about_container">
                      <Image className="object-center float-center"alt="picture" src={image6} />
                     
@@ -25,7 +25,8 @@ const Services = () => {
 
 
     
-                <div className=' z-10'>
+
+<div>
 
 <Card className="card hover:scale-105">
 

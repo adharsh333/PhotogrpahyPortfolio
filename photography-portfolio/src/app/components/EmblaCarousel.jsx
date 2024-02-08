@@ -15,24 +15,24 @@ export function EmblaCarousel() {
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
       <div className="embla__slide">
-        <Image alt="picture" src={image1} style ={{maxWidth: '100', height: 'auto',}}layout="responsive"/>
+        <Image alt="picture" src={image1} />
         
         </div>
         <div className="embla__slide">
-        <Image alt="picture" src={image2} style ={{maxWidth: '100', height: 'auto',}}layout="responsive"/>
+        <Image alt="picture" src={image2}/>
         
         </div>
         <div className="embla__slide">
-        <Image alt="picture" src={image3} style ={{maxWidth: '100', height: 'auto',}}layout="responsive"/>
+        <Image alt="picture" src={image3}/>
         
         </div>
      
         <div className="embla__slide">
-        <Image alt="picture" src={image4} style ={{maxWidth: '100', height: 'auto',}}layout="responsive"/>
+        <Image alt="picture" src={image4}/>
         
         </div>
         <div className="embla__slide">
-        <Image alt="picture" src={image5} style ={{maxWidth: '100', height: 'auto',}}layout="responsive"/>
+        <Image alt="picture" src={image5} />
         
         </div>
       </div>

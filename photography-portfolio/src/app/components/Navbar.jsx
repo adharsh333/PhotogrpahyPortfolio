@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="flex flex-wrap items-center justify-between mx-auto p-8">
             <Link href={"/"} className= "object-fill"><Logo/></Link>
 
-            <div className="mobile-menu block md:hidden  ">
+            <div className="mobile-menu block md:hidden">
                 {!navbarOpen ? (
                   <button 
                   onClick={()=> setNavbarOpen(true)} 

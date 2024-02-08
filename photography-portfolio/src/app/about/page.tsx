@@ -7,7 +7,7 @@ import image2 from '../images/slide-7.jpg';
 import image3 from '../images/MainLogo.png';
 import image4 from '../images/slide-10.jpg';
 import image5 from '../images/slide-11.jpg';
-import image6 from '../images/panaroma-4.jpg';
+import image6 from '../images/panaroma-5.jpg';
 import Image from '../../../node_modules/next/image';
 
 const About = () => {
@@ -27,7 +27,7 @@ const About = () => {
                 </span>
                 </h1>
 
-            <div className="col-auto text-[#ADB7BE] py-0 px-48">
+            <div className="col-auto text-[#d1d5db] py-24 px-48 text-center">
                     <TypeAnimation
                         sequence={[
                             
@@ -43,18 +43,23 @@ const About = () => {
                     />
                 </div>
                 </div>
-            <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-1">
+            <div className="grid grid-cols-4 grid-rows-1">
                 <div className='col-span-2'>
+                
+               <h1 className='pb-8'>
                 Welcome to Llama's world of timeless wedding photography! I am thrilled to be part of your journey, capturing the most precious moments on one of the most significant days of your life.   
-                    
+                    <br></br>
+                   <br></br>
                    
-                    <h1 className='pb-8'>
                             I'm Namgyal Lama, a passionate wedding photographer with a keen eye for detail and a heart that beats for storytelling through visuals. Photography, for me, is not just about clicking pictures; it's about freezing moments in time, turning them into everlasting memories that you can cherish forever.
                     </h1>
+                    
+                    
                 </div>
-               <div className='col-auto flex items-center justify-center'>
+                <div className=' flex item-center justify-center col-span-2'>
                <Image alt="picture" src={image3} width={200} height={250} loading='lazy'/>
                </div>
+               
             </div>
             <div className="imagecontainer">
                     <Image alt="picture" src={image2} width={600} height={350} layout="responsive" placeholder="blur"/>
