@@ -1,7 +1,6 @@
 'use-client'
 "use client"
 import {Card, CardHeader, CardBody, CardFooter, Button} from "@nextui-org/react";
-import image1 from '../images/slide-11.jpg';
 import Image from '../../../node_modules/next/image';
 import image2 from '../images/slide-4.jpg';
 import image3 from '../images/slide-7.jpg';

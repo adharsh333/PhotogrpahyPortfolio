@@ -19,9 +19,8 @@ const About = () => {
                     
             </div>
             </div>
-        <div className="px-48 py-32 z-10">
-                     
-        <div className='grid grid-cols-2'>
+        <div className="px-48 py-32 z-10 ">
+        <div className='grid grid-cols-2 '>
             <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400  to-gray-300">    About
                 </span>
@@ -66,7 +65,7 @@ const About = () => {
                     <Image alt="picture" src={image1} width={600} height={350} layout="responsive" placeholder="blur" loading='lazy'/>
                     <Image alt="picture" src={image4} width={600} height={350} layout="responsive" placeholder="blur" />
                   </div>
-        </div>   
+        </div> 
         </div>   
     )
 }

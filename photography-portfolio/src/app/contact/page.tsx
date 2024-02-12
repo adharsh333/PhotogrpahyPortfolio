@@ -14,6 +14,7 @@ const Contact = () => {
             <div>
             <div className='about'>
             <div className="about_container">
+              
                      <Image alt="picture" src={image6} />
                 </div>
            </div>

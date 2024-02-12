@@ -1,41 +1,61 @@
 "use client"
-import React from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
+import React, { useCallback } from 'react'
 import Image from 'next/image'
-import image1 from '../images/slide-1.jpg'
-import image2 from '../images/slide-2.jpg'
-import image3 from '../images/slide-3.jpg'
-import image4 from '../images/slide-8.jpg'
-import image5 from '../images/slide-5.jpg'
+import useEmblaCarousel from 'embla-carousel-react'
+import { DotButton, useDotButton } from './EmblaCarouselDotButton'
+import Autoplay from 'embla-carousel-autoplay'
+import imageByIndex from './imageByIndex'
 
-export function EmblaCarousel() {
-  const [emblaRef] = useEmblaCarousel()
+const EmblaCarousel = (props) => {
+  const { slides, options } = props
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
+
+  const onButtonClick = useCallback((emblaApi) => {
+    const { autoplay } = emblaApi.plugins()
+    if (!autoplay) return
+    if (autoplay.options.stopOnInteraction !== false) autoplay.stop()
+  }, [])
+
+  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
+    emblaApi,
+    onButtonClick
+  )
 
   return (
-    <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
-      <div className="embla__slide">
-        <Image alt="picture" src={image1} />
-        
-        </div>
-        <div className="embla__slide">
-        <Image alt="picture" src={image2}/>
-        
-        </div>
-        <div className="embla__slide">
-        <Image alt="picture" src={image3}/>
-        
-        </div>
-     
-        <div className="embla__slide">
-        <Image alt="picture" src={image4}/>
-        
-        </div>
-        <div className="embla__slide">
-        <Image alt="picture" src={image5} />
-        
+    <div>
+    <div className="embla">
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          {slides.map((index) => (
+            <div className="embla__slide" key={index}>
+            
+              <Image
+                className="embla__slide__img"
+                src={imageByIndex(index)}
+                alt="Your alt text"
+              />
+            </div>
+          ))}
         </div>
       </div>
+      <div className="embla__dots">
+        {scrollSnaps.map((_, index) => (
+          <DotButton
+            key={index}
+            onClick={() => onDotButtonClick(index)}
+            className={'embla__dot'.concat(
+              index === selectedIndex ? ' embla__dot--selected' : ''
+            )}
+          />
+        ))}
+      </div>
+      
     </div>
+             <div>
+             Subject to change
+           </div>
+           </div>
   )
 }
+
+export default EmblaCarousel

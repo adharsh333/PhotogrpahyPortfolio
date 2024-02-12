@@ -32,8 +32,9 @@ body {
   }
 }
 
+
 .about {
-  overflow: hidden;
+  overflow: visible;
   z-index: -10;
   position: absolute;
   top: 0%;
@@ -44,11 +45,11 @@ body {
 }
 .about__container {
   display: flex;
-  padding-bottom: 1px;
-  
+  padding-bottom: 1px;  
+
 }
 
-.embla {
+/**.embla {
   overflow: hidden;
   z-index: -10;
   position: absolute;
@@ -64,7 +65,10 @@ body {
 .embla__slide img{
   height: 100% ;
   background-size: cover;
-}
+}*/
+
+
+
 .social-ico-block {
   width: 20px;
   top: 50vh;
