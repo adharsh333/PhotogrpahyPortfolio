@@ -10,6 +10,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Lama Studios",
   description: "We deliver quality",
+
+  icons:{
+    icon:['/favicon.ico?v=4',],
+    apple: ['/apple-touch-icon.png?v=4',],
+    shortcut: ['/apple-touch-icon.png'],
+
+
+  },
+  manifest:'site.webmanifest'
+
 };
 
 export default function RootLayout({

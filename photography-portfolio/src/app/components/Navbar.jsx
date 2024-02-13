@@ -26,10 +26,6 @@ const navlinks =[
         title:"About",
         path:"../about/",
     },
-    {
-        title:"Contact",
-        path:"../contact",
-    }
 ]
 
 const Navbar = () => {
@@ -58,7 +54,7 @@ const Navbar = () => {
                 }
             </div>
   
-            <div className="menu hidden md:block md:w-auto" id="navbar">
+            <div className="menu hidden md:block md:w-auto z-50" id="navbar">
             <div className=''>
                 <ul className="flex p-4 md:px-16 md:py-5 md:flex-row md:space-x-8">
         
