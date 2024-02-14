@@ -15,7 +15,7 @@ const About = () => {
     return(
         <div>
          <div className='about'>
-            <div className="about_container w-full opacity-75">
+            <div className="about_container w-full opacity-85">
                      <Image alt="picture" src={image6} />
                     
             </div>

@@ -3,7 +3,10 @@ import React from 'react'
 import {Card, CardHeader, CardBody, CardFooter, Button} from "@nextui-org/react";
 import Image from '../../../node_modules/next/image';
 import { TypeAnimation } from 'react-type-animation';
-import image2 from '../images/slide-4.jpg';
+import image3 from '../images/slide-5.jpg';
+import image4 from '../images/slide-2.jpg';
+import image5 from '../images/slide-6.jpg';
+import image6 from '../images/slide-3.jpg';
 
 const HeroSection = () => {
     return(
@@ -36,7 +39,76 @@ const HeroSection = () => {
                     />
                 </div>
                   </div>
+                  <div className='pt-48'>
+                    <div className='pt-36'>
+                    This is where absolute ends
+                    </div>
+                  </div>
+<div className='pt-8'>
+<section className=" bg-gray-900 bg-opacity-65">
+<Card className="card hover:scale-105">
+<a className="absolute inset-0 z-10 backdrop-blur-0 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100  hover:backdrop-blur-3xl duration-200">
+      <h1  className=" tracking-wider font-bold text-transparent absolute text-6xl bg-clip-text bg-gradient-to-r from-gray-400  to-gray-400 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" >See More</h1>
+        </a>
 
+   
+
+        <Image
+        alt="Woman listing to music"
+        className="object-cover float-center p-6" src={image3}  objectFit="cover" layout="fill"
+      />
+       <p className='text-transparent absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+        <h4 className="font-bold  text-6xl bg-clip-text bg-gradient-to-r from-gray-200  to-gray-200 ">Gallery        </h4>    
+       </p>
+
+
+  </Card>
+  </section>
+  <div className='fixed'>
+  <Image
+        alt="Woman listing to music"
+        className="object-cover float-center p-6" src={image6}  objectFit="cover" layout="fill"
+      />
+  </div>
+  <section className=" bg-gray-900 bg-opacity-65">
+<Card className="card hover:scale-105">
+
+    <a className="absolute inset-0 z-10 backdrop-blur-0 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100  hover:backdrop-blur-3xl duration-200">
+      <h1  className=" tracking-wider font-bold text-transparent absolute text-6xl bg-clip-text bg-gradient-to-r from-gray-400  to-gray-400 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" >See More</h1>
+        </a>
+   
+
+        <Image
+        alt="Woman listing to music"
+        className="object-cover float-center p-6" src={image4}  objectFit="cover" layout="fill"
+      />
+        <h4 className="font-bold text-transparent absolute text-6xl bg-clip-text bg-gradient-to-r from-gray-200  to-gray-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Services</h4>    
+
+   
+
+
+  </Card>
+  </section>
+  <section className=" bg-gray-900 bg-opacity-65">
+<Card className="card hover:scale-105">
+
+<a className="absolute inset-0 z-10 backdrop-blur-0 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100  hover:backdrop-blur-3xl duration-200">
+      <h1  className=" tracking-wider font-bold text-transparent absolute text-6xl bg-clip-text bg-gradient-to-r from-gray-400  to-gray-400 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" >See More</h1>
+        </a>
+   
+
+        <Image
+        alt="Woman listing to music"
+        className="object-cover float-center p-6" src={image5}  objectFit="cover" layout="fill"
+      />
+        <h4 className="font-bold text-transparent absolute text-6xl bg-clip-text bg-gradient-to-r from-gray-200  to-gray-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">About</h4>    
+
+   
+
+
+  </Card>
+  </section>
+  </div>
         </section>
     )
 };

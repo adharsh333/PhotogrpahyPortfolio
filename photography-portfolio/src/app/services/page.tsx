@@ -31,7 +31,7 @@ const Services = () => {
                </div>
                <div className="grid grid-rows-3 gap-2 text-[#d1d5db] text-center backdrop-blur-xl px-48">
 
-
+<div className="pt-8">
 <section className="grid grid-cols-3 m-2 bg-gray-900 bg-opacity-65">
 <Card className="card hover:scale-105">
 
@@ -44,23 +44,28 @@ const Services = () => {
   <div className="relative col-span-2 ">
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <h1 className="text-3xl">Investment & Pricing</h1>
-        <br></br>
+        <div className="pt-4 grid grid-cols-3 gap-4 divide-x-2 divide-slate-400/25">
+        <div>
         Portrait Session:
 Description: A personalized portrait session lasting up to 1 hour at the location of your choice.
 Includes: 15 high-resolution edited photos.
 Price: $250
-<br></br>
+</div>
+<div>
 Wedding Package:
 
 Description: Comprehensive coverage of your special day, including ceremony, reception, and portraits.
 Includes: Up to 8 hours of photography, 200+ high-resolution edited photos, online gallery.
 Price: $2000
-<br></br>
+</div>
+<div>
 Event Coverage:
 
 Description: Photography coverage for corporate events, parties, and celebrations.
 Includes: Flexible hourly rates, minimum booking of 2 hours.
 Price: $150/hour
+</div>
+</div>
          </p>
     </div>
   </section>
@@ -68,24 +73,28 @@ Price: $150/hour
     <div className="relative col-span-2 ">
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <h1 className="text-3xl">Investment & Pricing</h1>
-        <br></br>
+        <div className="pt-4 grid grid-cols-3 gap-4 divide-x-2 divide-slate-400/25">
+        <div>
         Portrait Session:
-
 Description: A personalized portrait session lasting up to 1 hour at the location of your choice.
 Includes: 15 high-resolution edited photos.
 Price: $250
-<br></br>
+</div>
+<div>
 Wedding Package:
 
 Description: Comprehensive coverage of your special day, including ceremony, reception, and portraits.
 Includes: Up to 8 hours of photography, 200+ high-resolution edited photos, online gallery.
 Price: $2000
-<br></br>
+</div>
+<div>
 Event Coverage:
 
 Description: Photography coverage for corporate events, parties, and celebrations.
 Includes: Flexible hourly rates, minimum booking of 2 hours.
 Price: $150/hour
+</div>
+</div>
          </p>
     </div>
 <Card className="card hover:scale-105">
@@ -121,27 +130,33 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
   <div className="relative col-span-2 ">
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-3xl">Investment & Pricing</h1>
-            <br></br>
-            Portrait Session:
-
+            <div className="pt-4 grid grid-cols-3 gap-4 divide-x-2 divide-slate-400/25">
+        <div>
+        Portrait Session:
 Description: A personalized portrait session lasting up to 1 hour at the location of your choice.
 Includes: 15 high-resolution edited photos.
 Price: $250
-<br></br>
+</div>
+<div>
 Wedding Package:
 
 Description: Comprehensive coverage of your special day, including ceremony, reception, and portraits.
 Includes: Up to 8 hours of photography, 200+ high-resolution edited photos, online gallery.
 Price: $2000
-<br></br>
+</div>
+<div>
 Event Coverage:
 
 Description: Photography coverage for corporate events, parties, and celebrations.
 Includes: Flexible hourly rates, minimum booking of 2 hours.
 Price: $150/hour
+</div>
+</div>
          </p>
+        
     </div>
   </section>
+  </div>
     </div>
 </div>
 
