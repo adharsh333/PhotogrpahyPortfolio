@@ -7,7 +7,7 @@ import image2 from '../images/slide-7.jpg';
 import image3 from '../images/MainLogo.png';
 import image4 from '../images/slide-10.jpg';
 import image5 from '../images/slide-11.jpg';
-import image6 from '../images/panaroma-5.jpg';
+import image6 from '../images/panaroma-4.jpg';
 import Image from '../../../node_modules/next/image';
 import { FormEvent } from 'react';
 
@@ -15,12 +15,13 @@ const About = () => {
     return(
         <div>
          <div className='about'>
-            <div className="about_container w-full">
+            <div className="about_container w-full opacity-75">
                      <Image alt="picture" src={image6} />
                     
             </div>
             </div>
-        <div className="px-48 py-32 z-10 ">
+            
+        <div className="px-48 pt-32 z-10 ">
         <div className='grid grid-cols-2 '>
             <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400  to-gray-300">    About
@@ -43,10 +44,12 @@ const About = () => {
                     />
                 </div>
                 </div>
-            <div className="grid grid-cols-4 grid-rows-1">
+                </div>
+                <div className='px-48 pt-12 backdrop-blur-xl'>
+            <div className="grid grid-cols-4 ">
                 <div className='col-span-2'>
                 
-               <h1 className='pb-8'>
+               <h1 className='pb-8 '>
                 Welcome to Llama's world of timeless wedding photography! I am thrilled to be part of your journey, capturing the most precious moments on one of the most significant days of your life.   
                     <br></br>
                    <br></br>
@@ -61,14 +64,18 @@ const About = () => {
                </div>
                
             </div>
+       
             <div className="imagecontainer">
+               
                     <Image alt="picture" src={image2} width={600} height={350} layout="responsive" placeholder="blur"/>
                     <Image alt="picture" src={image1} width={600} height={350} layout="responsive" placeholder="blur" loading='lazy'/>
                     <Image alt="picture" src={image4} width={600} height={350} layout="responsive" placeholder="blur" />
+                    
                   </div>
+                 
                   <div className='pt-16'>
-            <div className="container cols-auto backdrop-blur-3xl lg:bg-white/10">
-            <section className="bg-white dark:bg-gray-900">
+            
+            <section className="bg-gray-900 bg-opacity-65">
   <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
       <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"> Want to send feedback about an recent event? Need details about our Event plan? Let us know.</p>
@@ -91,10 +98,12 @@ const About = () => {
       </form>
   </div>
 </section>
+   
     </div>
     </div>
         </div> 
-        </div>   
+   
+         
     )
 }
 
